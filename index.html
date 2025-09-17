@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Loja de Roupas Masculinas</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+    }
+    header {
+      background: #111;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 2.5rem;
+    }
+    nav {
+      margin-top: 10px;
+    }
+    nav a {
+      color: #fff;
+      margin: 0 10px;
+      text-decoration: none;
+    }
+    .hero {
+      background: url("https://source.unsplash.com/1600x600/?fashion,men") no-repeat center center/cover;
+      height: 400px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      text-shadow: 1px 1px 5px black;
+    }
+    .hero h2 {
+      font-size: 3rem;
+    }
+    .about, .products, .contact {
+      padding: 40px;
+      text-align: center;
+    }
+    .products .grid {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+    .card {
+      background: #f4f4f4;
+      padding: 20px;
+      border-radius: 8px;
+      width: 250px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    }
+    .card img {
+      width: 100%;
+      border-radius: 8px;
+    }
+    footer {
+      background: #111;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Roupas Masculinas</h1>
+    <nav>
+      <a href="#about">Sobre</a>
+      <a href="#products">Produtos</a>
+      <a href="#contact">Contato</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Estilo e Conforto para o Seu Dia</h2>
+  </section>
+
+  <section id="about" class="about">
+    <h2>Sobre Nós</h2>
+    <p>Somos uma loja especializada em roupas masculinas modernas, elegantes e confortáveis. Nossa missão é deixar você sempre bem vestido para qualquer ocasião.</p>
+  </section>
+
+  <section id="products" class="products">
+    <h2>Nossos Produtos</h2>
+    <div class="grid">
+      <div class="card">
+        <img src="https://source.unsplash.com/250x200/?shirt,men" alt="Camisa social">
+        <h3>Camisa Social</h3>
+        <p>Elegância e qualidade para seu dia a dia.</p>
+      </div>
+      <div class="card">
+        <img src="https://source.unsplash.com/250x200/?jacket,men" alt="Jaqueta">
+        <h3>Jaqueta Casual</h3>
+        <p>Perfeita para os dias frios com estilo.</p>
+      </div>
+      <div class="card">
+        <img src="https://source.unsplash.com/250x200/?jeans,men" alt="Calça jeans">
+        <h3>Calça Jeans</h3>
+        <p>Conforto e resistência para todas as horas.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Contato</h2>
+    <p>Email: contato@roupasmasculinas.com</p>
+    <p>Telefone: (11) 99999-9999</p>
+  </section>
+
+  <footer>
+    <p>© 2025 Roupas Masculinas - Todos os direitos reservados</p>
+  </footer>
+</body>
+</html>
