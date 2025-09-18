@@ -1,170 +1,222 @@
-/* Reset básico */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
+/* Importação da fonte Google Fonts */
 body {
-  font-family: 'Segoe UI', sans-serif;
-  background-color: #f5f5f5;
-  color: #333;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    color: #333;
 }
 
-/* Cabeçalho */
-header {
-  background-color: #1a1a1a;
-  color: white;
-  text-align: center;
-  padding: 40px 20px;
+.main-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
 }
 
-header h1 {
-  font-size: 2.5em;
-  margin-bottom: 10px;
+/* --- Cabeçalho e Banner --- */
+.header-container {
+    text-align: center;
+    background-color: #1a1a1a;
+    color: #fff;
+    padding: 40px 20px 20px;
 }
 
-header p {
-  font-size: 1.2em;
+.header-text h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin: 0;
 }
 
-/* Seção de produtos */
-.produtos {
-  padding: 40px 20px;
-  max-width: 1200px;
-  margin: auto;
+.header-text p {
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-top: 5px;
 }
 
-.produtos h2 {
-  text-align: center;
-  margin-bottom: 30px;
-  font-size: 2em;
+.banner img {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
 }
 
+/* --- Títulos de Seção --- */
+.section-title {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 500;
+    color: #1a1a1a;
+    margin-bottom: 30px;
+}
+
+/* --- Seção de Produtos --- */
 .grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
 }
 
 .item {
-  background: white;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
-  overflow: hidden;
-  text-align: center;
-  padding: 20px;
-  transition: transform 0.3s ease;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s ease;
 }
 
 .item:hover {
-  transform: translateY(-5px);
+    transform: translateY(-5px);
 }
 
 .item img {
-  width: 100%;
-  height: auto;
-  border-radius: 8px;
-  margin-bottom: 15px;
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
 }
 
 .item h3 {
-  font-size: 1.2em;
-  margin-bottom: 10px;
+    font-size: 1.25rem;
+    font-weight: 500;
+    margin: 15px 0 5px;
 }
 
-.item p {
-  font-size: 1.1em;
-  color: #2c3e50;
-  margin-bottom: 15px;
+.item .price {
+    color: #c09f6b;
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: 15px;
 }
 
-.item a {
-  display: inline-block;
-  padding: 10px 15px;
-  background-color: #25d366;
-  color: white;
-  text-decoration: none;
-  border-radius: 5px;
-  font-weight: bold;
+.btn {
+    display: inline-block;
+    background-color: #25d366; /* Cor do WhatsApp */
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+    margin-bottom: 20px;
 }
 
-.item a:hover {
-  background-color: #1ebe5d;
+.btn:hover {
+    background-color: #128c7e;
 }
 
-/* Seção de formulário */
-.contato {
-  background-color: #fff;
-  padding: 40px 20px;
-  text-align: center;
+/* --- Formulário de Contato --- */
+.newsletter {
+    background-color: #f0f0f0;
+    padding: 40px;
+    border-radius: 10px;
+    text-align: center;
+    margin-top: 40px;
 }
 
-.contato h2 {
-  font-size: 1.8em;
-  margin-bottom: 20px;
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    max-width: 400px;
+    margin: 0 auto;
 }
 
-form input {
-  width: 80%;
-  max-width: 400px;
-  margin: 10px 0;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
+.form-container input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
 }
 
-form button {
-  padding: 10px 20px;
-  background-color: #1a1a1a;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  font-weight: bold;
+.btn-primary {
+    width: 100%;
+    background-color: #c09f6b;
+    color: #fff;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
 }
 
-form button:hover {
-  background-color: #333;
+.btn-primary:hover {
+    background-color: #a3875a;
 }
 
-/* Seção de contatos */
+/* --- Contatos --- */
 .contatos {
-  background-color: #ecf0f1;
-  padding: 40px 20px;
-  text-align: center;
+    text-align: center;
+    padding: 40px 0;
 }
 
-.contatos h2 {
-  font-size: 1.8em;
-  margin-bottom: 20px;
+.contact-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
 }
 
-.contatos ul {
-  list-style: none;
-  padding: 0;
-  font-size: 1.1em;
+.contact-link {
+    color: #1a1a1a;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
 }
 
-.contatos li {
-  margin: 10px 0;
+.contact-link:hover {
+    color: #c09f6b;
 }
 
-.contatos a {
-  color: #1a1a1a;
-  text-decoration: none;
-  font-weight: bold;
+/* --- Destaque Final --- */
+.destaque-final {
+    text-align: center;
+    padding: 40px;
+    background-color: #1a1a1a;
+    color: #fff;
+    border-radius: 10px;
+    margin-top: 40px;
 }
 
-.contatos a:hover {
-  text-decoration: underline;
+.destaque-final .message {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    max-width: 600px;
+    margin: 0 auto;
 }
 
-/* Rodapé */
-footer {
-  background-color: #1a1a1a;
-  color: white;
-  text-align: center;
-  padding: 20px;
-  font-size: 0.9em;
+/* --- Rodapé --- */
+.footer-container {
+    text-align: center;
+    padding: 20px;
+    background-color: #1a1a1a;
+    color: #888;
+    font-size: 0.9rem;
+    margin-top: 40px;
+}
+
+/* --- Responsividade --- */
+@media (max-width: 600px) {
+    .header-text h1 {
+        font-size: 2rem;
+    }
+    .header-text p {
+        font-size: 1rem;
+    }
+    .section-title {
+        font-size: 1.5rem;
+    }
+    .grid {
+        grid-template-columns: 1fr;
+    }
+    .destaque-final {
+        padding: 20px;
+    }
 }
