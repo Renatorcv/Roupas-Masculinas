@@ -4,177 +4,45 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Roupas Masculinas</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #f5f5f5;
-      color: #333;
-    }
-
-    header {
-      background-color: #1a1a1a;
-      color: white;
-      text-align: center;
-      padding: 40px 20px;
-    }
-
-    header h1 {
-      font-size: 2.5em;
-      margin-bottom: 10px;
-    }
-
-    .produtos {
-      padding: 40px 20px;
-      max-width: 1200px;
-      margin: auto;
-    }
-
-    .produtos h2 {
-      text-align: center;
-      margin-bottom: 30px;
-      font-size: 2em;
-    }
-
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 30px;
-    }
-
-    .item {
-      background: white;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-      overflow: hidden;
-      text-align: center;
-      padding: 20px;
-    }
-
-    .item img {
-      width: 100%;
-      height: auto;
-      border-radius: 8px;
-      margin-bottom: 15px;
-    }
-
-    .item h3 {
-      font-size: 1.2em;
-      margin-bottom: 10px;
-    }
-
-    .item p {
-      font-size: 1.1em;
-      color: #2c3e50;
-      margin-bottom: 15px;
-    }
-
-    .item a {
-      display: inline-block;
-      padding: 10px 15px;
-      background-color: #25d366;
-      color: white;
-      text-decoration: none;
-      border-radius: 5px;
-      font-weight: bold;
-    }
-
-    .contato, .contatos {
-      background-color: #fff;
-      padding: 40px 20px;
-      text-align: center;
-    }
-
-    .contato h2, .contatos h2 {
-      font-size: 1.8em;
-      margin-bottom: 20px;
-    }
-
-    form input {
-      width: 80%;
-      max-width: 400px;
-      margin: 10px 0;
-      padding: 10px;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-    }
-
-    form button {
-      padding: 10px 20px;
-      background-color: #1a1a1a;
-      color: white;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-      font-weight: bold;
-    }
-
-    .contatos ul {
-      list-style: none;
-      padding: 0;
-      font-size: 1.1em;
-    }
-
-    .contatos li {
-      margin: 10px 0;
-    }
-
-    .contatos a {
-      color: #1a1a1a;
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    .contatos a:hover {
-      text-decoration: underline;
-    }
-
-    footer {
-      background-color: #1a1a1a;
-      color: white;
-      text-align: center;
-      padding: 20px;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header>
-    <h1>Roupas Masculinas</h1>
-    <p>Moda Social e Elegante para Homens</p>
+    <div class="banner">
+      <img src="assets/banner-roupas.gif" alt="Banner de Roupas Masculinas" />
+    </div>
+    <div class="header-text">
+      <h1>Roupas Masculinas</h1>
+      <p>Estilo, elegância e atitude para o homem moderno</p>
+    </div>
   </header>
 
   <section class="produtos">
-    <h2>Novidades da Coleção</h2>
+    <h2>Lenços de Bolso – Elegância nos Detalhes</h2>
     <div class="grid">
       <div class="item">
-        <img src="assets/camisa-quadriculada.jpg" alt="Camisa Manga Longa Quadriculada" />
-        <h3>Camisa Manga Longa Quadriculada</h3>
-        <p>R$ 299,90</p>
-        <a href="https://wa.me/55996332374?text=Olá! Tenho interesse na Camisa Manga Longa Quadriculada">Comprar via WhatsApp</a>
+        <img src="assets/lenco-azul.jpg" alt="Lenço Azul Clássico" />
+        <h3>Lenço Azul Clássico</h3>
+        <p>R$ 59,90</p>
+        <a href="https://wa.me/55996332374?text=Olá! Tenho interesse no Lenço Azul Clássico">Comprar via WhatsApp</a>
       </div>
       <div class="item">
-        <img src="assets/camisa-oxford.jpg" alt="Camisa Slim Oxford Marinho" />
-        <h3>Camisa Slim Oxford Marinho</h3>
-        <p>R$ 299,90</p>
-        <a href="https://wa.me/55996332374?text=Olá! Tenho interesse na Camisa Slim Oxford Marinho">Comprar via WhatsApp</a>
+        <img src="assets/lenco-branco.jpg" alt="Lenço Branco Tradicional" />
+        <h3>Lenço Branco Tradicional</h3>
+        <p>R$ 57,00</p>
+        <a href="https://wa.me/55996332374?text=Olá! Tenho interesse no Lenço Branco Tradicional">Comprar via WhatsApp</a>
       </div>
       <div class="item">
-        <img src="assets/polo-piquet.jpg" alt="Polo Piquet Azul Petróleo" />
-        <h3>Polo Piquet Azul Petróleo</h3>
-        <p>R$ 299,99</p>
-        <a href="https://wa.me/55996332374?text=Olá! Tenho interesse na Polo Piquet Azul Petróleo">Comprar via WhatsApp</a>
+        <img src="assets/lenco-preto.jpg" alt="Lenço Preto Elegante" />
+        <h3>Lenço Preto Elegante</h3>
+        <p>R$ 62,90</p>
+        <a href="https://wa.me/55996332374?text=Olá! Tenho interesse no Lenço Preto Elegante">Comprar via WhatsApp</a>
       </div>
       <div class="item">
-        <img src="assets/camiseta-verde.jpg" alt="Camiseta Lisa Verde Selva" />
-        <h3>Camiseta Lisa Verde Selva</h3>
-        <p>R$ 189,99</p>
-        <a href="https://wa.me/55996332374?text=Olá! Tenho interesse na Camiseta Lisa Verde Selva">Comprar via WhatsApp</a>
-      </div>
-      <div class="item">
-        <img src="assets/bermuda-jeans.jpg" alt="Bermuda Jeans Dark Blue" />
-        <h3>Bermuda Jeans Dark Blue</h3>
-        <p>R$ 399,99</p>
-        <a href="https://wa.me/55996332374?text=Olá! Tenho interesse na Bermuda Jeans Dark Blue">Comprar via WhatsApp</a>
+        <img src="assets/lenco-vinho.jpg" alt="Lenço Vinho Luxo" />
+        <h3>Lenço Vinho Luxo</h3>
+        <p>R$ 64,90</p>
+        <a href="https://wa.me/55996332374?text=Olá! Tenho interesse no Lenço Vinho Luxo">Comprar via WhatsApp</a>
       </div>
     </div>
   </section>
@@ -198,6 +66,11 @@
     </ul>
   </section>
 
+  <section class="destaque-final">
+    <h2>🕴️ Destaque Masculino</h2>
+    <p>Na Roupas Masculinas, cada peça é pensada para valorizar o estilo, a confiança e a presença do homem contemporâneo. Vista-se com atitude. Vista-se com propósito.</p>
+  </section>
+
   <footer>
     <p>&copy; 2025 Roupas Masculinas – Todos os direitos reservados</p>
   </footer>
@@ -210,6 +83,7 @@
   </script>
 </body>
 </html>
+
 
 
 
