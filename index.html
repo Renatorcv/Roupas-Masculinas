@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Loja de Roupas Masculinas</title>
+  <title>Roupas Masculinas</title>
   <style>
     * {
       margin: 0;
@@ -13,23 +13,31 @@
     body {
       font-family: Arial, sans-serif;
       line-height: 1.6;
+      background: #fafafa;
+      color: #333;
     }
     header {
       background: #111;
       color: #fff;
       padding: 20px;
       text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
     }
     header h1 {
-      font-size: 2.5rem;
-    }
-    nav {
-      margin-top: 10px;
+      font-size: 2rem;
+      margin-bottom: 5px;
     }
     nav a {
       color: #fff;
-      margin: 0 10px;
+      margin: 0 12px;
       text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+    nav a:hover {
+      color: #f1c40f;
     }
     .hero {
       background: url("https://source.unsplash.com/1600x600/?fashion,men") no-repeat center center/cover;
@@ -37,15 +45,23 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      color: white;
-      text-shadow: 1px 1px 5px black;
+      text-align: center;
+      color: #fff;
+      padding: 20px;
+      text-shadow: 1px 1px 5px rgba(0,0,0,0.7);
     }
     .hero h2 {
-      font-size: 3rem;
+      font-size: 2.5rem;
+      max-width: 700px;
     }
-    .about, .products, .contact {
-      padding: 40px;
+    section {
+      padding: 50px 20px;
       text-align: center;
+    }
+    section h2 {
+      font-size: 1.8rem;
+      margin-bottom: 20px;
+      color: #111;
     }
     .products .grid {
       display: flex;
@@ -54,15 +70,44 @@
       flex-wrap: wrap;
     }
     .card {
-      background: #f4f4f4;
+      background: #fff;
       padding: 20px;
       border-radius: 8px;
-      width: 250px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+      width: 260px;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 12px rgba(0,0,0,0.25);
     }
     .card img {
       width: 100%;
       border-radius: 8px;
+      margin-bottom: 12px;
+    }
+    .card h3 {
+      margin-bottom: 8px;
+      font-size: 1.2rem;
+      color: #222;
+    }
+    .card p {
+      margin-bottom: 6px;
+    }
+    .card strong {
+      color: #111;
+      font-size: 1.1rem;
+    }
+    .contact p {
+      margin: 6px 0;
+      font-size: 1rem;
+    }
+    .contact a {
+      color: #111;
+      text-decoration: none;
+    }
+    .contact a:hover {
+      text-decoration: underline;
     }
     footer {
       background: #111;
@@ -70,6 +115,7 @@
       text-align: center;
       padding: 20px;
       margin-top: 20px;
+      font-size: 0.9rem;
     }
   </style>
 </head>
@@ -84,40 +130,45 @@
   </header>
 
   <section class="hero">
-    <h2>Estilo e Conforto para o Seu Dia</h2>
+    <h2>Estilo e Conforto para o Homem Moderno</h2>
   </section>
 
-  <section id="about" class="about">
-    <h2>Sobre Nós</h2>
-    <p>Somos uma loja especializada em roupas masculinas modernas, elegantes e confortáveis. Nossa missão é deixar você sempre bem vestido para qualquer ocasião.</p>
-  </section>
+  <main>
+    <section id="about" class="about">
+      <h2>Sobre Nós</h2>
+      <p>Somos uma loja especializada em roupas masculinas modernas, elegantes e confortáveis. Nossa missão é deixar você sempre bem vestido para qualquer ocasião.</p>
+    </section>
 
-  <section id="products" class="products">
-    <h2>Nossos Produtos</h2>
-    <div class="grid">
-      <div class="card">
-        <img src="https://source.unsplash.com/250x200/?shirt,men" alt="Camisa social">
-        <h3>Camisa Social</h3>
-        <p>Elegância e qualidade para seu dia a dia.</p>
+    <section id="products" class="products">
+      <h2>Nossos Produtos</h2>
+      <div class="grid">
+        <div class="card">
+          <img src="https://source.unsplash.com/250x200/?shirt,men" alt="Camisa social masculina">
+          <h3>Camisa Social</h3>
+          <p>Elegância e qualidade para seu dia a dia.</p>
+          <p><strong>R$ 199,90</strong></p>
+        </div>
+        <div class="card">
+          <img src="https://source.unsplash.com/250x200/?jacket,men" alt="Jaqueta masculina">
+          <h3>Jaqueta Casual</h3>
+          <p>Perfeita para os dias frios com estilo.</p>
+          <p><strong>R$ 349,90</strong></p>
+        </div>
+        <div class="card">
+          <img src="https://source.unsplash.com/250x200/?jeans,men" alt="Calça jeans masculina">
+          <h3>Calça Jeans</h3>
+          <p>Conforto e resistência para todas as horas.</p>
+          <p><strong>R$ 249,90</strong></p>
+        </div>
       </div>
-      <div class="card">
-        <img src="https://source.unsplash.com/250x200/?jacket,men" alt="Jaqueta">
-        <h3>Jaqueta Casual</h3>
-        <p>Perfeita para os dias frios com estilo.</p>
-      </div>
-      <div class="card">
-        <img src="https://source.unsplash.com/250x200/?jeans,men" alt="Calça jeans">
-        <h3>Calça Jeans</h3>
-        <p>Conforto e resistência para todas as horas.</p>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <section id="contact" class="contact">
-    <h2>Contato</h2>
-    <p>Email: contato@roupasmasculinas.com</p>
-    <p>Telefone: (11) 99999-9999</p>
-  </section>
+    <section id="contact" class="contact">
+      <h2>Contato</h2>
+      <p>Email: <a href="mailto:contato@roupasmasculinas.com">contato@roupasmasculinas.com</a></p>
+      <p>Telefone: <a href="tel:+5511999999999">(11) 99999-9999</a></p>
+    </section>
+  </main>
 
   <footer>
     <p>© 2025 Roupas Masculinas - Todos os direitos reservados</p>
