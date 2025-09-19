@@ -2,12 +2,15 @@
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Roupas Masculinas - Estilo e Elegância</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+    rel="stylesheet"
+  />
 </head>
 <body>
   <header class="header-container">
@@ -28,62 +31,32 @@
           <img src="assets/lenco-azul.jpg" alt="Lenço Azul Clássico" />
           <h3>Lenço Azul Clássico</h3>
           <p class="price">R$ 59,90</p>
-          <a href="https://wa.me/55996332374?text=Olá! Tenho interesse no Lenço Azul Clássico" class="btn">Comprar via WhatsApp</a>
+          <a href="https://wa.me/55996332374?text=Olá! Tenho interesse no Lenço Azul Clássico" class="btn" target="_blank" rel="noopener noreferrer">Comprar via WhatsApp</a>
         </div>
         <div class="item">
           <img src="assets/lenco-branco.jpg" alt="Lenço Branco Tradicional" />
           <h3>Lenço Branco Tradicional</h3>
           <p class="price">R$ 57,00</p>
-          <a href="https://wa.me/55996332374?text=Olá! Tenho interesse no Lenço Branco Tradicional" class="btn">Comprar via WhatsApp</a>
+          <a href="https://wa.me/55996332374?text=Olá! Tenho interesse no Lenço Branco Tradicional" class="btn" target="_blank" rel="noopener noreferrer">Comprar via WhatsApp</a>
         </div>
         <div class="item">
           <img src="assets/lenco-preto.jpg" alt="Lenço Preto Elegante" />
           <h3>Lenço Preto Elegante</h3>
           <p class="price">R$ 62,90</p>
-          <a href="https://wa.me/55996332374?text=Olá! Tenho interesse no Lenço Preto Elegante" class="btn">Comprar via WhatsApp</a>
+          <a href="https://wa.me/55996332374?text=Olá! Tenho interesse no Lenço Preto Elegante" class="btn" target="_blank" rel="noopener noreferrer">Comprar via WhatsApp</a>
         </div>
         <div class="item">
           <img src="assets/lenco-vinho.jpg" alt="Lenço Vinho Luxo" />
           <h3>Lenço Vinho Luxo</h3>
           <p class="price">R$ 64,90</p>
-          <a href="https://wa.me/55996332374?text=Olá! Tenho interesse no Lenço Vinho Luxo" class="btn">Comprar via WhatsApp</a>
-        </div>
-      </div>
-    </section>
-
-    <section class="section modelos">
-      <h2 class="section-title">Modelos em Destaque</h2>
-      <div class="grid">
-        <div class="item">
-          <img src="assets/sobretudo-cinza.jpg" alt="Sobretudo Cinza Bicolor" />
-          <h3>Sobretudo Cinza Bicolor</h3>
-          <p class="price">R$ 749,90</p>
-          <a href="https://wa.me/55996332374?text=Olá! Tenho interesse no Sobretudo Cinza Bicolor" class="btn">Comprar via WhatsApp</a>
-        </div>
-        <div class="item">
-          <img src="assets/sobretudo-xadrez.jpg" alt="Sobretudo Xadrez Marrom" />
-          <h3>Sobretudo Xadrez Marrom</h3>
-          <p class="price">R$ 699,90</p>
-          <a href="https://wa.me/55996332374?text=Olá! Tenho interesse no Sobretudo Xadrez Marrom" class="btn">Comprar via WhatsApp</a>
-        </div>
-        <div class="item">
-          <img src="assets/sapato-oxford.jpg" alt="Sapato Oxford Marrom" />
-          <h3>Sapato Oxford Marrom</h3>
-          <p class="price">R$ 399,90</p>
-          <a href="https://wa.me/55996332374?text=Olá! Tenho interesse no Sapato Oxford Marrom" class="btn">Comprar via WhatsApp</a>
-        </div>
-        <div class="item">
-          <img src="assets/sobretudo-duplo.jpg" alt="Sobretudo Duplo Cinza Escuro" />
-          <h3>Sobretudo Duplo Cinza Escuro</h3>
-          <p class="price">R$ 799,90</p>
-          <a href="https://wa.me/55996332374?text=Olá! Tenho interesse no Sobretudo Duplo Cinza Escuro" class="btn">Comprar via WhatsApp</a>
+          <a href="https://wa.me/55996332374?text=Olá! Tenho interesse no Lenço Vinho Luxo" class="btn" target="_blank" rel="noopener noreferrer">Comprar via WhatsApp</a>
         </div>
       </div>
     </section>
 
     <section class="section newsletter">
       <h2 class="section-title">Receba novidades</h2>
-      <form class="form-container">
+      <form class="form-container" onsubmit="event.preventDefault(); alert('Cadastro realizado com sucesso!');">
         <input type="text" placeholder="Seu nome" required />
         <input type="email" placeholder="Seu e-mail" required />
         <button type="submit" class="btn-primary">Cadastrar</button>
@@ -94,31 +67,24 @@
       <h2 class="section-title">Contatos</h2>
       <ul class="contact-list">
         <li><strong>Responsável:</strong> Renato Calixto</li>
-        <li><strong>WhatsApp:</strong> <a href="https://wa.me/55996332374" class="contact-link">+55 99633-2374</a></li>
-        <li><strong>Instagram:</strong> <a href="https://instagram.com/roupasmasculinas" target="_blank" class="contact-link">@roupasmasculinas</a></li>
-        <li><strong>Facebook:</strong> <a href="https://facebook.com/roupasmasculinas" target="_blank" class="contact-link">facebook.com/roupasmasculinas</a></li>
+        <li><strong>WhatsApp:</strong> <a href="https://wa.me/55996332374" class="contact-link" target="_blank" rel="noopener noreferrer">+55 99633-2374</a></li>
+        <li><strong>Instagram:</strong> <a href="https://instagram.com/roupasmasculinas" target="_blank" class="contact-link" rel="noopener noreferrer">@roupasmasculinas</a></li>
+        <li><strong>Facebook:</strong> <a href="https://facebook.com/roupasmasculinas" target="_blank" class="contact-link" rel="noopener noreferrer">facebook.com/roupasmasculinas</a></li>
       </ul>
     </section>
 
     <section class="section destaque-final">
       <h2 class="section-title">🕴️ Destaque Masculino</h2>
-      <p class="message">Na <strong>Roupas Masculinas</strong>, cada peça é pensada para valorizar o estilo, a confiança e a presença do homem contemporâneo. <br>Vista-se com atitude. Vista-se com propósito.</p>
+      <p class="message">
+        Na Roupas Masculinas, cada peça é pensada para valorizar o estilo, a confiança e a presença do homem contemporâneo. Vista-se com atitude. Vista-se com propósito.
+      </p>
     </section>
   </main>
 
   <footer class="footer-container">
     <p>&copy; 2025 Roupas Masculinas – Todos os direitos reservados</p>
   </footer>
-
-  <script>
-    document.querySelector("form").addEventListener("submit", function (e) {
-      e.preventDefault();
-      alert("Cadastro realizado com sucesso!");
-    });
-  </script>
 </body>
 </html>
-
-
 
 
